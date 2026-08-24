@@ -1,6 +1,57 @@
-/* Zerando as configurações do navegador*/
+/* Reset da configuração de fábrica */
+/* Seletor universal */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;    
+}
+
+/* Seletor por tipo / tag */
+main {
+    max-width: 90%;
+    background-color: rgb(239, 225, 225);
+    margin: auto;
+    padding: 2em;
+}
+
+/* Seletor por id */
+#secao1 { 
+    background-color: rgb(130, 130, 196);
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+    padding: 0.5em;
+}
+
+/* Seletor por classe */
+.secao2 {
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    background-color: pink;
+    color: #000000;
+    border: .25em solid rgb(54, 78, 134);
+}
+
+/* Seletor por classe */
+.secao3 {
+    border: 2em inset black;
+}
+
+/* Seletor por pseudo-classe / pseudo-elemento */
+a:link {
+    text-decoration: none;    
+}
+
+/* Seletor por irmão adjacente */
+h2 + p {
+    text-align: justify;
+}
+
+/* Seletor por filho */
+li > ul {
+    text-align: left;
 }
